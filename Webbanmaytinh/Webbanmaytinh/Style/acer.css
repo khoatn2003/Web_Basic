@@ -1,0 +1,340 @@
+﻿* {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    overflow-x: hidden; /* Loại bỏ thanh cuộn ngang */
+}
+/* Banner Top */
+.banner-top {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background-color: #FFF200
+}
+
+    .banner-top img {
+        height: auto; /* Đảm bảo tỷ lệ ảnh vẫn chính xác */
+    }
+
+.header {
+    width: 100%;
+    height: auto;
+    background-color: #FFF200;
+}
+
+.header_top {
+    margin: 0px 0px 1px 0px;
+    width: 100%;
+    height: 50px;
+    background-color: #353535;
+    align-items: center;
+    display: flex;
+}
+
+    .header_top p {
+        color: white;
+        padding-left: 80px;
+    }
+
+    .header_top .login {
+        margin-left: 60%;
+        text-decoration: none;
+        display: flex;
+    }
+
+        .header_top .login p {
+            color: white;
+        }
+
+        .header_top .login a {
+            color: white
+        }
+
+            .header_top .login a:hover {
+                color: #FFF200
+            }
+
+/*-------THANH MENU---------*/
+.header_bot {
+    width: 100%;
+    height: 60px;
+    background-color: #353535;
+    align-items: center;
+    display: flex;
+}
+
+    .header_bot .icon {
+        display: none;
+    }
+
+    .header_bot .header_logo {
+        margin-right: auto; /* Đưa logo sang trái */
+        padding-left: 80px; /* Điều chỉnh khoảng cách giữa logo và cạnh trái */
+    }
+
+    .header_bot ul {
+        margin: auto;
+        padding: 0;
+        display: flex; /* Sử dụng flex để các mục menu nằm ngang */
+        height: 100%; /* Đảm bảo ul chiếm toàn bộ chiều cao của header_bot */
+    }
+
+        .header_bot ul li {
+            list-style: none;
+            padding: 0;
+            height: 100%; /* Đảm bảo mỗi li chiếm hết chiều cao của ul */
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+            .header_bot ul li a {
+                text-decoration: none;
+                display: flex; /* Sử dụng flex để căn giữa nội dung */
+                justify-content: center; /* Căn giữa theo chiều ngang */
+                align-items: center; /* Căn giữa theo chiều dọc */
+                height: 100%; /* Đảm bảo a bao phủ toàn bộ chiều cao của li */
+                color: white;
+                padding: 0 15px; /* Tạo khoảng cách ngang giữa các mục */
+            }
+
+            .header_bot ul li:hover {
+                background-color: #808080;
+                color: white;
+            }
+            /*--------submenu-----------*/
+            .header_bot ul li ul {
+                display: none; /* Ẩn submenu mặc định */
+                position: absolute; /* Đặt vị trí của submenu */
+                background-color: #353535; /* Màu nền của submenu */
+                padding: 0;
+                margin: 0;
+                list-style-type: none;
+                width: 100%;
+                z-index: 10;
+            }
+
+            .header_bot ul li:hover ul {
+                display: block; /*Hiển thị submenu khi di chuột qua mục cha */
+            }
+
+            .header_bot ul li ul li {
+                float: none; /* Đảm bảo submenu không nằm ngang */
+                margin: 0;
+                padding: 0;
+                height: 50px;
+            }
+                /* Khoảng cách bên trong của các mục trong submenu */
+                .header_bot ul li ul li a {
+                    padding: 0px 20px;
+                    color: white;
+                    text-align: center;
+                    line-height: 40px;
+                    background-color: #353535;
+                }
+
+                    .header_bot ul li ul li a:hover {
+                        background-color: #C89979;
+                        color: white;
+                    }
+            /* Điều chỉnh submenu để nằm dưới mục cha */
+            .header_bot ul li ul {
+                top: 97%; /* Điều chỉnh khoảng cách giữa mục cha và submenu */
+                left: 0;
+            }
+                    
+
+                                        /*--------Baner--------*/
+.up {
+    margin: 25px 80px 30px 80px;
+    font-size: 25px;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*.chon {
+    color: #424242;
+    font-size: 19px;
+}
+
+    .chon select {
+        font-size: 15px;
+        color: #A4A4A4;
+    }*/
+
+.abc a:hover {
+    color: #424242;
+}
+
+/*phần container*/
+/*border: none, hidden, dotted, dashed, solid, double, groove, ridge, inset, outset*/
+.container {
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 50px;
+    display: flex;
+}
+.sidebar_one {
+    flex: 1;
+    margin-right: 15px;
+    box-sizing: border-box;
+}
+.row_1{
+    font-size:18px;
+}
+.show {
+    border: #E6E6E6 solid 1px;
+    border-radius: 5px;
+    background-color: #F2F2F2;
+    margin-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+    .show li {
+        list-style: none;
+        margin-top: 32px;
+    }
+.row_2 {
+    margin-top: 30px;
+}
+
+.show1 {
+    border: #E6E6E6 solid 1px;
+    border-radius: 5px;
+    background-color: #F2F2F2;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+    .show1 ul {
+        margin-left: 0px;
+    }
+
+    .show1 li {
+        list-style: none;
+        margin-top: 25px;
+        color: #6E6E6E;
+    }
+                                        /*-----------side-two------------*/
+.sidebar_two {
+    box-sizing: border-box;
+    flex: 3;
+}
+.sanpham_show {
+    display: inline-block;
+    margin: 20px 12px;
+    border: #D8D8D8 solid 2px;
+    border-radius: 10px;
+    padding-bottom: 10px
+}
+
+.sanpham_gia {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: black
+}
+
+.sanpham_show.sanpham_gia.sanpham_ten {
+    font-size: 30px;
+}
+
+.sanpham_gia1 {
+    font-weight: 700;
+    margin-top: 8px;
+    color: coral;
+}
+
+.sanpham_click {
+    background-color: coral;
+    margin-top: 8px;
+    margin-left: 50px;
+    max-width: 100px;
+    color: #fff;
+    font-weight: 400;
+    border-radius: 5px;
+    padding: 3px 10px;
+    text-align: center;
+}
+
+.sanpham_show img {
+    width: 250px;
+    height: 250px;
+}
+.sanpham_show:hover img {
+    transform: scale(1.1); /* Phóng to ảnh lên 10% khi hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Đổ bóng khi hover */
+}
+
+                                        /*------------------Footer------------------*/
+/*footer*/
+.footter {
+    margin-top: 20px;
+    width: 100%;
+    background-color: #A5B099;
+    display: flex;
+    flex-direction: column;
+}
+
+.footter_top {
+    display: flex;
+    justify-content: space-between; /* Chia đều khoảng cách giữa các phần tử */
+    padding: 40px;
+    padding-left: 200px;
+    background-color: #353535;
+}
+
+    .footter_top .Thongtinlienhe,
+    .footter_top .Lienket {
+        width: 30%; /* Điều chỉnh kích thước để các mục đều nhau */
+        color: white;
+    }
+
+    .footter_top h1 {
+        margin-bottom: 20px; /* Giảm khoảng cách giữa tiêu đề và nội dung */
+        font-size: 22px;
+    }
+
+    .footter_top p,
+    .footter_top ul li {
+        margin: 10px 0; /* Khoảng cách giữa các đoạn văn hoặc mục liên kết */
+        font-size: 17px;
+        line-height: 1.6;
+        color: white;
+    }
+
+    .footter_top ul {
+        padding-left: 0; /* Bỏ padding mặc định của danh sách */
+        list-style: none;
+    }
+
+        .footter_top ul li a {
+            color: white; /* Màu mặc định */
+            text-decoration: none;
+            transition: color 0.3s ease; /* Thêm hiệu ứng chuyển đổi màu mượt mà */
+        }
+
+            .footter_top ul li a:hover {
+                color: #d3804a; /* Màu khi di chuột vào */
+            }
+
+.footter_bot {
+    height: 30%;
+    padding: 20px;
+    background-color: #353535;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.copyright {
+    font-size: 16px;
+    text-align: center;
+}
